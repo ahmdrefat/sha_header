@@ -2,19 +2,19 @@
 
 # SHAHeader
 
-SHAHeader is a simple Rack middleware gem for Rails 3.  When required, it
+SHAHeader is a simple Rack middleware gem for Rails.  When required, it
 will instruct Rails to automatically insert its middleware into the Rack
 stack and inject your current git SHA hash into all of your dynamic
 response headers.
 
 ## Compatibility
 
-The SHAHeader gem is Ruby 1.8.7, 1.9.2, 1.9.3, and 2.0.0 compatible and it is
-compatible with Rails 3.x.
+The SHAHeader gem is Ruby +2.0.0 compatible and it is
+compatible with Rails 5.
 
 ## Installation
 
-In Rails 3, modify your `Gemfile` to add the following line:
+In Rails, modify your `Gemfile` to add the following line:
 
     gem 'sha_header'
 
@@ -30,7 +30,7 @@ application has added the above `Gemfile` line.  Using curl:
 
 And, the following response is received:
 
-    HTTP/1.1 200 OK 
+    HTTP/1.1 200 OK
     Content-Type: text/html; charset=utf-8
     ETag: "25ec427afba8daa376f309559b1b3c5c"
     Cache-Control: max-age=0, private, must-revalidate
